@@ -11,6 +11,8 @@ let score= false
 NOTES: convert it into Number
 "33"=33
 "33Abs"=NaN
+if score = null ; then => 0
+if score= undefined ; then => NaN
 true => 1 ; false => 0
 */
 
@@ -26,11 +28,19 @@ NOTES: convert it into Boolean
 ""=> False 
 */
 
-let someNum = undefined
+let someNum = true
 let stringSomeNumber = String(someNum)
-// console.log(typeof(someNum))
-// console.log(typeof stringSomeNumber)
-// console.log(stringSomeNumber)
+console.log(typeof(someNum))
+console.log(typeof stringSomeNumber)
+console.log(stringSomeNumber)
+
+/* 
+NOTES: convert it into string
+null => null as string
+undefined => undefined as string
+33 =>"33"
+true boolean => true as string
+*/
 
 // **************************** Operations **************************
 
@@ -55,16 +65,16 @@ let str3 = str1+str2
 console.log(2+3+"3")    //if number is first then operation is performed assuming elements without "" as numbers and then added as string with "any string text"
 //however  last 2 laines are not preffered in professional space for writting code for companies
 
-console.log(+true) //conversion of bollean to number due to the '+'
-console.log(+"")    //conversion into number due to '+' however this writting style is not preffered in professional space
-console.log(+"TEXT")
+//console.log(+true) //conversion of bollean to number due to the '+'
+//console.log(+"")    //conversion into number due to '+' however this writting style is not preffered in professional space
+//console.log(+"TEXT")
 //FOR PROPER STUDY GO THROUGH OPERATOR PRECEDENCE
 let x = 3;
 const y = x++;
 // x is 4; y is 3
 
 let x2 = 3n;
-console.log(typeof x2)
+//console.log(typeof x2)
 const y2 = x2++;
 // x2 is 4n; y2 is 3n
-console.log(y2)
+//console.log(y2)
