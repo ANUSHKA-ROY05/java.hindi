@@ -12,7 +12,7 @@ let isLOggedin = false  //Boolean
  ranges of primituve datatypes in js
  number => 2to the power 53
  bigint
- string => ""
+ string => "" ; we can also use single quotes '' but recommended is "" 
  boolean => true/false
  null => standalone value , also a datatype in js,also a representation of empty value
  undefined => iska mtlb abhi value assign nahi hui hai
